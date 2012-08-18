@@ -19,7 +19,7 @@ our %EXPORT_TAGS = (
 	all	=> [ qw(mkpasswd) ],
 );
 our @EXPORT_OK = @{ $EXPORT_TAGS{all} };
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 our $FATAL = "";
 
 my %keys = (
@@ -279,7 +279,7 @@ behavior.
 
 By default, C<mkpasswd()> will return C<undef> if it cannot generate a
 password.  Some people are inclined to exception handling, so
-B<String::MkPasswd> does its best to accomodate them.  If the variable
+B<String::MkPasswd> does its best to accommodate them.  If the variable
 C<$String::MkPasswd::FATAL> is set to a true value, C<mkpasswd()> will
 L<Carp::croak()> with an error instead of returning C<undef>.
 
@@ -302,7 +302,7 @@ Chris Grau E<lt>cgrau@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2003-2010 by Chris Grau
+Copyright (C) 2003-2012 by Chris Grau
 
 This library is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself, either Perl version 5.8.1 or, at
